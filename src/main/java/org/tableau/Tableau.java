@@ -7,8 +7,6 @@ public class Tableau {
     private ArrayList<ArrayList<Cases>> tableau = new ArrayList<ArrayList<Cases>>();
     private int ligne = 6;
     private int colonne = 7;
-    private int tour_du_joueur = 1;
-
     public Tableau() {
         for (int i = 0; i < ligne; i++) {
             ArrayList<Cases> line = new ArrayList<Cases>();
@@ -43,15 +41,8 @@ public class Tableau {
         return returnString.toString();
     }
 
-    public int getTurnOfPlayer() {
-        return tour_du_joueur;
-    }
-
-    public void setTurnOfPlayer(int turnOfPlayer) {
-        this.tour_du_joueur = turnOfPlayer;
-    }
-
     public ArrayList<ArrayList<Cases>> getBoard() {
         return tableau;
     }
 };
+

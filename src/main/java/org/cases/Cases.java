@@ -1,7 +1,7 @@
 package org.cases;
 
 public class Cases {
-    private int player = 2;
+    private int player = 0;
 
     public int getPlayer() {
         return player;
